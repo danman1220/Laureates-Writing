@@ -1,0 +1,142 @@
+The goal of this section is to provide a comprehensive background of the theory
+and techniques used in gravitational wave pulsar astrophysics.
+
+It is necessary, then, to first understand what a pulsar is. When a large star
+reaches the end of its life cycle, it has the potential to go supernova. This
+occurs when the core of the star runs out of material to fuse, and the fusion
+reactions begin to slow down. As the rate of fusion decreases, the outward
+pressure caused by the fusion also decreases. There reaches a point, then, when
+the pressure due to fusion does not balance the gravitational pressure of the
+star. At that point, the star collapses on itself in a catastrophic event.
+After such an event, there are a few possibilities for the outcome of the core
+remnants of the star. If the gravitational pressure is enough to force the core
+past its Scwarzshield radius, the core will collapse into a black hole. On the
+other hand, if the gravitational pressure is relatively weak, the core will
+remain relatively undisturbed, and will become a white dwarf star. In the
+intermediary range between these two possibilities lies a third one; if the
+gravitational pressure is just barely not enough to force the core into a black
+hole state, it will instead force the formation of a neutron star.
+Neutron stars are the most extreme objects in the universe. With such intense
+gravitational pressure forming them, high-energy nuclear processes occur in the
+atoms that formed the core of the original star. As protons and electrons are
+pushed together, it becomes energetically favorable for the electrons to undergo
+reverse beta decay, and fuse into neutrons. With no electrostatic repulsion
+between the protons and electrons, the core mass--which is almost all neutrons
+at this point--can collapse further on itself, achieving a density similar to
+that of an atomic nucleus. At this point, the core mass has reached a stable
+configuration, and is now a neutron star. More than an entire solar mass of core
+material forms the star, which is spherical with a diameter of about 10km.
+
+After the formation of the neutron star, there is a possibility that the star
+will be "spun up" to high angular speeds. If the star was in a binary system,
+it may accrete material from its companion, and take some angular momentum from
+it. Since the neutron star is so small, a small change in angular momentum will
+be magnified to a larger change in the angular velocity of the star.
+
+Another peculiar feature of neutron stars is their intense magnetic fields--up
+to 1e8 times as much as the earth. For neutron stars that are spinning rapidly,
+this magnetic field moves very rapidly through space, accelerating free
+electrons and causing synchrotron radiation. The radiation is then forced out of
+the poles of the magnetic fields in a beam formation. 
+
+A pulsar is exactly this sort of object--a rotating neutron star with beam
+emissions of electromagnetic waves. Pulsars are particularly bright in radio
+frequencies, which makes them best studied using radio telescopes. They have
+very slow spin-down rates, so their periods are very stable in time. [P-Pdot
+diagram here] As seen in the P-Pdot diagram, there exists a certain class of
+pulsars with incredibly low periods and spin-down rates. These are known as the
+millisecond pulsars, called such due to their extremely fast rotational periods.
+With such amazing stability and cadence, millisecond pulsars function incredibly
+well as stellar timekeepers--some rivaling even an atomic clock's precision. It
+is this stability that makes millisecond pulsars the primary data source for
+gravitational wave searches.
+
+A gravitational wave is a perturbation in spacetime caused by a rotating
+quadropole somewhere in the universe. The most common sources of gravitational
+waves are black hole binary systems, especially supermassive black hole binaries
+that occur in galaxy collisions. Such binary systems emit sinusoidal
+gravitational waves that give rise to the perturbation [GW equation].
+THis perturbation occurs in the local metric of the space, and represents a
+change in the space-time intervals between objects. The co-ordinate distances
+remain fixed, but the practical (read: light travel time) distance is perturbed
+slightly.
+
+The LIGO detectors recently announced the first detection of gravitational
+waves. They detected a strain [deltaL/L = 1e-21], corresponding to an absolute
+distance change on the order of a fraction of a proton diameter. The LIGO
+observatory was able to detect such small changes in distance by using an
+optimized interferometer. By splitting a laser along two orthogonal paths,
+reflecting them back to each other, and observing the interference magnitude, an
+interferometer is able to precisely measure miniscule changes in the
+differential lengths of their arms. One way of conceptualizing the
+interferometer is by following the crests of the laser across the device. The
+crests are evenly spaced in the arm, and without loss of generality will
+recombine constructively. However, imagine a change in the length of one of the
+arms. Now, the crests along one arm have more distance to travel, and thus will
+arrive delayed compared to their companions. Such a delay will induce a slightly
+destructive interference in the resulting recombination beam, and will be
+detectable by a light intensity detector. One can think of the stable arm as a
+"reference beam", and the changing arm as the "detector beam". With this mode of
+thinking, the interferometer acts as a comparison device between the reference
+beam and the detector beam.
+
+In a way, pulsar timing functions the same way as interferometers do. The line
+of sight between us and the pulsar functions as the detector beam, with the
+pulses originating from the pulsar functioning as the crests. In order to get
+the equivalent of a reference beam, it is necessary to develop a timing model
+that describes with great precision the expected time of arrival of the pulse
+from the pulsar. With such a timing model, it is possible to compare the
+measured time of arrival and the expected time of arrival to gain information
+about the distance changes on the line of sight of the pulsar.
+
+However, such a method requires an incredibly accurate timing model for the
+pulsar that takes into account all known effects between the earth and the
+pulsar. Such a model has been developed, and is used in the analysis pipeline to
+accurately calculate the expected time of arrival of a pulse. The timing model
+takes into account a wide array of effects. First and foremost, the timing model
+requires a precise measurement of the period of the observed pulsar, as well as
+the spindown rate, to model the pulse source accurately. Next, the timing model
+takes into account the motion of the earth relative to the pulsar. The model
+normalizes the times of arrival to the center of the solar system, and accounts
+for the movement of the pulsar towards, away, or transverse to the solar system.
+Next, the model takes into account any effects due to general relativity,
+including the Shapiro delay effect for binary systems, and precession for
+orbiting pulsars. [mention DM?]
+The ultimate goal of the timing model is to "zero out" any known effects between
+us and the pulsar. After the timing model is made, any deviation we observe from
+the timing model must be due to some unmodelled effect.
+
+At regular intervals, NANOGrav observes the 43 [?] pulsars that are in the
+pulsar timing array. such observations allow comparisions to be made between the
+expected times of arrival and the measured times of arrival. One use of these
+observations is to improve the timing model for the pulsar. Deviations from the
+timing model that follow known patterns due to incorrect timing model values can
+give insight on how to improve the timing model parameters. [incorrect timing
+model demo]. Thus, the timing model is "self-correcting" in the sense that
+observations themselves improve the precision of the timing model.
+
+However, there may be deviations from the timing model that do not correspond to
+incorrect parameters. These deviations must necessarily, then, come from
+unmodelled processes. Of the most importance is the deviation corresponding to a
+sine-like change in the distance between us and the pulsar. Although there could
+be many potential sources for such a perturbation, a likely candidate is a
+gravitational wave between the earth and the pulsar. It is possible, however,
+that such a sine-like signal corresponds to an unmodelled process in the timing
+model. For example, if the pulsar were in a binary system that was not known
+beforehand, it would appear as if the distance between us and the pulsar were
+changing sinusoidally--because it actually is changing sinusoidally due to the
+orbit of the pulsar around its companion! Many binary systems have been
+discovered this way, long before the optical telescopes verify the existence of
+the companion.
+
+To verify whether or not a sine-like signal corresponds to a gravitational wave,
+the data is searched for a time correlation between pulsars. If the sine wave
+shows up in multiple pulsars, then it can be concluded that the signal is not
+originating from an unmodelled process in any individual pulsar. Such a
+correlated signal must, then. correspond to some unmodelled process in the space
+between all the pulsars in the galaxy. Using the relative locations of the
+pulsars, specifics of the sine signal can be probed. Polarity and propagation
+direction can be ascertained from the relative amplitudes of the signals in the
+different pulsars in the pulsar timing array.
+
+[Section on stochastic background search]

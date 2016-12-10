@@ -1,0 +1,165 @@
+Step-By-Step Instructions for Data Analysis of Long-Track Data for High
+Frequency GW Detection
+
+What you'll need: -computer with linux installed (could potentially work on mac
+as well)
+
+
+Step 1: Installing tempo2 
+
+Tempo2 can be found at
+https://bitbucket.org/psrsoft/tempo2, or grabbed by using the command
+
+	git clone https://bitbucket.org/psrsoft/tempo2.git
+
+After getting all the files, follow the instructions included in the README.
+[Plugins like plk (the graphics interface that uses PGPLOT) are not necessary for
+data analysis, but can be useful to visualize your data before analysis.
+However, installation of PGPLOT and plk is not covered in this manual.]
+
+The command ./configure will attempt to configure all compilers and plugins to
+get ready for the make. Any errors you might have will come up in this step.
+Note, if you would like to install tempo2 in a particular location aside from
+the default, use the command
+	
+	./configure --prefix=/your/install/path
+
+If you are getting an error regarding your gcc and F77:
+Make sure you have compilers for c and fortran installed, since tempo2 requires
+both of them. Furthermore, they need to be able to cross link.
+Some versions of F77, for example, do not cross link with other versions of gcc.
+Therefore, it is best to use gcc and gfortran to compile tempo2. If ./configure
+is still looking at F77 instead of gfortran, run the command
+
+	export F77=gfortran
+
+Which will set your fortran compiler to gfortran manually. Then, run ./configure
+again to pick up the changes.
+
+Once ./configure passes, the environment is set up to run make correctly.
+Running the command
+
+	make && make install
+
+will compile all the necessary components. Note, you may have to run as su, as
+make creates some new directories.
+
+That's it! You can run make clean to delete the unnecessary files from
+installation, and you can run make plugins && make install plugins to install
+the relevant plugins. 
+
+If everything worked successfully, there should now be a program called tempo2 that
+is runnable from the command line. Running 
+
+    tempo2 -v
+
+will verify that tempo2 is correctly installed.
+
+Step 2: Installing PAL2
+
+Luckily, PAL2 is significantly easier to install than tempo2.
+First, clone the git repo with the command
+
+	git clone https://github.com/jellis18/PAL2.git	
+
+Second, you'll want to grab an environment manager like Anaconda
+(https://docs.continuum.io/anaconda/install) to manage the python packages that
+PAL2 needs. After installing anaconda, run the command
+
+	conda env create -f environment.yml
+
+which will create an environment called pal2_conda based off the dependencies in
+environment.yml. Note, if there are issues with certain versions not being
+available for your OS, use the command 
+	
+	conda search $PACKAGE
+
+where $PACKAGE is the package name that has an incompatible version, and find
+the version number that is closest to the one environment.yml wants. Then, edit
+environment.yml to the version numbers that work.
+	
+After conda creates the environment, switch to it with 
+	
+	source activate pal2_conda
+
+Next, proceed with the installations that conda does not handle with the
+commands
+
+	pip install -r requirements.txt
+	pip install libstempo --install-option="--with-tempo2=$TEMPO2"
+
+and run
+
+	python setup.py install
+
+If everything worked successfully, the scripts makeh5File.py and PAL2_run.py should
+be executable. Check this with:
+
+    ./PAL2_run.py -h
+
+If the installation was successful, the script should return a long list of
+options that are available.
+
+
+Step 3: Generating an hdf5 file
+
+In order to properly process the data from a .par and .tim file, it must first 
+be put into a format that PAL2 can handle. The hdf5 format (Hierarchical Data
+Format 5) was chosen as the data model to store the relevant data from the .par
+and .tim files. 
+In order to convert raw data into an hdf5 data model, the data must first be
+consolidated into a single .tim file with a single .par file to go with it. The
+.par should have fits turned on for FD parameters, as well as DM and F0.
+Put the .tim file in a subdirectory (usually ./tim/) and the .par file in a
+different subdirectory (usually ./par/). Then, run the makeH5File.py script that
+came packaged with PAL2.
+
+    makeH5File.py --pardir "./par/" --timdir "./tim/" --h5File
+"name_of_output.hdf5"
+
+If everything worked successfully, there should now be a file called
+"name_of_output.hdf5" in the current directory. This is the file to send to the
+upper limit script.
+
+Step 4: Generating Noise
+
+In order to correctly run simulations based on the data, a proper noise model
+must be established. This is done by exploring the noise model parameter space
+(usually a five-dimensional space) using a Markov Chain Monte Carlo algorithm to
+maximize the likelihood that a particular combination of parameters models the
+noise correctly. To run the algorithm, invoke the PAL2_run script with:
+
+    PAL2_run.py --h5File "/path/to/h5File.hdf5" --outDir
+"/path/to/output/directory/" --nf 30 --incEquad --incJitterEquad --mark6
+--pulsar <pulsar name>
+
+The additional parameter --incRed will include two additional parameters for
+modelling red noise, but is not necessary for short data sets.
+
+If everything worked successfully, there should now be a directory with the
+noise data stored in multiple .txt files. The specific format of the noise
+subdirectory is not important, as the upper limit script knows how to deal with
+it.
+
+Step 5: generating an upper limit
+
+Once the noise model is built correctly, the final step is to run the suite of
+simulations in the generateUpperLimit.py file for the data and noise model. This
+can be done by running the command:
+
+    generateUpperLimits.py --file /path/to/hdf5File.hdf5 --noise-dir
+/path/to/noise/ --out-dir /path/to/output/directory/ --psr <pulsar name>
+--frq-resolution 50 --nreal 10000 --run-name <descriptive simulation name>
+
+The parameter --frq-resolution can be changed to sample the frequency window
+more or less depending on how resolved you need the limit curve to be. The
+parameter --nreal controls the number of realizations (or simulations) done per
+upper limit. It should be no less than 10000, and in practice should be a lot
+more than that.
+
+The script will output its results per-frequency to stdout, as well as to a text
+file that it will generate and save in the --out-dir. 
+
+If everything worked successfully, there should now be a numpy-compatible .txt
+file with the generated upper limit on CW strain in the frequency range
+specified in generateUpperLimit.py!

@@ -1,0 +1,437 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+  \usepackage{url,hyperref}
+  \usepackage{epstopdf}
+  \usepackage[usenames,dvipsnames]{color}
+\usepackage{sidecap}
+
+%%%%%%%%%%%%%%%
+% User defined macros
+%%%%%%%%%%%%%%%
+
+\newcommand{\etal}{{et al.~}}
+\newcommand{\lta}{\lesssim}
+\newcommand{\gta}{\gtrsim}
+\newcommand{\kms}{\,\rm km\,s^{-1}}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\refr}{}
+%\newcommand{\refr}{\color{red}}
+\newcommand{\refb}{}
+%\newcommand{\refb}{\color{blue}}
+
+\def\be{\begin{equation*}}
+\def\ee{\end{equation*}}
+\def\ba{\begin{eqnarray*}}
+\def\ea{\end{eqnarray*}}
+
+%\newenvironment{inlinefigure}{
+%\noindent\begin{minipage}{0.999\linewidth}\begin{center}}
+%{\end{center}\end{minipage}\smallskip}
+
+\begin{document}
+
+\title{Detecting High Frequency Gravitational Waves}
+\author{Daniel Halmrast}
+%\author{Advisor: Timothy Dolch}
+
+\maketitle
+
+\section{Abstract}
+Multiple-hour long observations of single pulsars allow us to probe relatively
+high-frequency regions of the gravitational wave (GW) spectrum typically outside
+the sensitivity of the pulsar timing array (PTA). Using such single pulsar
+observations from the North American Nanohertz Observatory for Gravitational
+Waves (NANOGrav), we applied known techniques for seeking single-source continuous
+wave (CW) sources. By analyzing simulated data with an injected source, we
+verified the accuracy of the CW search method for hours-long data sets.
+Furthermore, by applying an identical analysis to the true data, we found that
+the data places new upper limits on GW strain in the high frequency regime.
+
+\section{Introduction}
+The search for low frequency gravitational waves in the universe is currently
+best carried out using Pulsar Timing Arrays. The incredible precision timing of
+pulsars, along with their relative abundance in the universe, make the PTA a
+high precision gravitational wave detection instrument with the ability to probe
+a large range of the gravitational wave parameter space.
+\\
+The sensitivity of the PTA is due to two factors: the natural precision of
+millisecond pulsars, and the self-correcting nature of the timing model used to
+model pulsar behavior. Both of these aspects of the PTA will be covered in more
+detail in the next section.
+\\
+The high fidelity of the PTA stems mainly from the fact that there is an
+abundance of pulsars in the galaxy with many different placements in the sky.
+Each line of sight to a pulsar provides data on the strength of the
+gravitational wave passing across the line of sight. Furthermore, each pair of
+pulsars provides correlation data that can give information on the direction and
+overall magnitude of the gravitational wave. This is because each line of sight
+gives information analagous to the projection of the wave onto the line of
+sight. Thus, to ascertain a two-dimensional signal source position, at least two
+lines of sight are needed. Furthermore, with additional lines of sight,
+correlation restrictions can be put on the data to add to the confidence of a
+detection.
+\\
+For example, if the data from two lines of sight suggested a source location
+at some coordinates $(\theta,\phi)$, one would expect any other set of two lines of
+sight to yield the same result. If a second set of lines of sight confirmed that
+the source location was at coordinates $(\theta,\phi)$, that would add to the
+confidence of the detection. However, if another line of sight were to predict
+different coordinates, that would suggest that the $(\theta, \phi)$ detection in
+the first pair of pulsars is more likely to be a false positive.
+\\
+With so many lines of sight, many interesting properties of gravitational waves
+can be probed, including precise measurements of the location of the source, as
+well as the strain of the gravitational wave itself. However, the hallmark of
+such a detector is the ability to detect the stochastic background of
+gravitational waves. This is described in further detail in the next section.
+
+\section{Background}
+The goal of this section is to provide a comprehensive background of the theory
+and techniques used in gravitational wave pulsar astrophysics.
+\\
+It is necessary, then, to first understand what a pulsar is. When a large star
+reaches the end of its life cycle, it has the potential to go supernova. This
+occurs when the core of the star runs out of material to fuse, and the fusion
+reactions begin to slow down. As the rate of fusion decreases, the outward
+pressure caused by the fusion also decreases. There reaches a point, then, when
+the pressure due to fusion does not balance the gravitational pressure of the
+star. At that point, the star collapses on itself in a catastrophic event.
+After such an event, there are a few possibilities for the outcome of the core
+remnants of the star. If the gravitational pressure is enough to force the core
+past its Scwarzshield radius, the core will collapse into a black hole. On the
+other hand, if the gravitational pressure is relatively weak, the core will
+remain relatively undisturbed, and will become a white dwarf star. In the
+intermediary range between these two possibilities lies a third one; if the
+gravitational pressure is just barely not enough to force the core into a black
+hole state, it will instead force the formation of a neutron star.
+Neutron stars are the most extreme objects in the universe. With such intense
+gravitational pressure forming them, high-energy nuclear processes occur in the
+atoms that formed the core of the original star. As protons and electrons are
+pushed together, it becomes energetically favorable for the electrons to undergo
+reverse beta decay, and fuse into neutrons. With no electrostatic repulsion
+between the protons and electrons, the core mass--which is almost all neutrons
+at this point--can collapse further on itself, achieving a density similar to
+that of an atomic nucleus. At this point, the core mass has reached a stable
+configuration, and is now a neutron star. More than an entire solar mass of core
+material forms the star, which is spherical with a diameter of about 10km.
+\\
+After the formation of the neutron star, there is a possibility that the star
+will be "spun up" to high angular speeds. If the star was in a binary system,
+it may accrete material from its companion, and take some angular momentum from
+it. Since the neutron star is so small, a small change in angular momentum will
+be magnified to a larger change in the angular velocity of the star.
+\\
+Another peculiar feature of neutron stars is their intense magnetic fields--up
+to 1e8 times as much as the earth. For neutron stars that are spinning rapidly,
+this magnetic field moves very rapidly through space, accelerating free
+electrons and causing synchrotron radiation. The radiation is then forced out of
+the poles of the magnetic fields in a beam formation. 
+\\
+A pulsar is exactly this sort of object--a rotating neutron star with beam
+emissions of electromagnetic waves. Pulsars are particularly bright in radio
+frequencies, which makes them best studied using radio telescopes. They have
+very slow spin-down rates, so their periods are very stable in time.
+As seen in the P-Pdot diagram, there exists a certain class of
+pulsars with incredibly low periods and spin-down rates. These are known as the
+millisecond pulsars, called such due to their extremely fast rotational periods.
+With such amazing stability and cadence, millisecond pulsars function incredibly
+well as stellar timekeepers--some rivaling even an atomic clock's precision. It
+is this stability that makes millisecond pulsars the primary data source for
+gravitational wave searches.
+
+\begin{figure}
+\caption{The P-Pdot diagram for pulsars. Here rotational periods (x-axis) are
+plotted against their spindown rates. Millisecond pulsars live in the bottom
+left quadrant of the plot, and spin down very slowly.}
+\includegraphics[width=0.6\textwidth]{./figures/fig_P_Pdot_with_names.png}
+\end{figure}
+
+
+A gravitational wave is a perturbation in spacetime caused by a rotating
+quadropole somewhere in the universe. The most common sources of gravitational
+waves are black hole binary systems, especially supermassive black hole binaries
+that occur in galaxy collisions. Such binary systems emit sinusoidal
+gravitational waves that give rise to the perturbation [GW equation].
+This perturbation occurs in the local metric of the space, and represents a
+change in the space-time intervals between objects. The co-ordinate distances
+remain fixed, but the practical (read: light travel time) distance is perturbed
+slightly.
+\\
+The LIGO detectors recently announced the first detection of gravitational
+waves. They detected a strain $\frac{\delta L}{L} \approx 10^{-21}$, corresponding to an absolute
+distance change on the order of a fraction of a proton diameter. The LIGO
+observatory was able to detect such small changes in distance by using an
+optimized interferometer. By splitting a laser along two orthogonal paths,
+reflecting them back to each other, and observing the interference magnitude, an
+interferometer is able to precisely measure miniscule changes in the
+differential lengths of their arms. One way of conceptualizing the
+interferometer is by following the crests of the laser across the device. The
+crests are evenly spaced in the arm, and without loss of generality will
+recombine constructively. However, imagine a change in the length of one of the
+arms. Now, the crests along one arm have more distance to travel, and thus will
+arrive delayed compared to their companions. Such a delay will induce a slightly
+destructive interference in the resulting recombination beam, and will be
+detectable by a light intensity detector. One can think of the stable arm as a
+"reference beam", and the changing arm as the "detector beam". With this mode of
+thinking, the interferometer acts as a comparison device between the reference
+beam and the detector beam.
+\\
+In a way, pulsar timing functions the same way as interferometers do. The line
+of sight between us and the pulsar functions as the detector beam, with the
+pulses originating from the pulsar functioning as the crests. In order to get
+the equivalent of a reference beam, it is necessary to develop a timing model
+that describes with great precision the expected time of arrival of the pulse
+from the pulsar. With such a timing model, it is possible to compare the
+measured time of arrival and the expected time of arrival to gain information
+about the distance changes on the line of sight of the pulsar.
+\\
+However, such a method requires an incredibly accurate timing model for the
+pulsar that takes into account all known effects between the earth and the
+pulsar. Such a model has been developed, and is used in the analysis pipeline to
+accurately calculate the expected time of arrival of a pulse. The timing model
+takes into account a wide array of effects. First and foremost, the timing model
+requires a precise measurement of the period of the observed pulsar, as well as
+the spindown rate, to model the pulse source accurately. Next, the timing model
+takes into account the motion of the earth relative to the pulsar. The model
+normalizes the times of arrival to the center of the solar system, and accounts
+for the movement of the pulsar towards, away, or transverse to the solar system.
+Next, the model takes into account any effects due to general relativity,
+including the Shapiro delay effect for binary systems, and precession for
+orbiting pulsars.
+The ultimate goal of the timing model is to "zero out" any known effects between
+us and the pulsar. After the timing model is made, any deviation we observe from
+the timing model must be due to some unmodelled effect.
+\\
+At regular intervals, NANOGrav observes the 43 [?] pulsars that are in the
+pulsar timing array. such observations allow comparisions to be made between the
+expected times of arrival and the measured times of arrival. One use of these
+observations is to improve the timing model for the pulsar. Deviations from the
+timing model that follow known patterns due to incorrect timing model values can
+give insight on how to improve the timing model parameters.
+Thus, the timing model is "self-correcting" in the sense that
+observations themselves improve the precision of the timing model.
+
+\begin{figure}
+\caption{Having an incorrect parameter in the model produces easily detectable
+and correctable signatures in the residual data.}
+\includegraphics[width=0.6\textwidth]{./figures/bad_timing.png}
+\end{figure}
+
+
+However, there may be deviations from the timing model that do not correspond to
+incorrect parameters. These deviations must necessarily, then, come from
+unmodelled processes. Of the most importance is the deviation corresponding to a
+sine-like change in the distance between us and the pulsar. Although there could
+be many potential sources for such a perturbation, a likely candidate is a
+gravitational wave between the earth and the pulsar. It is possible, however,
+that such a sine-like signal corresponds to an unmodelled process in the timing
+model. For example, if the pulsar were in a binary system that was not known
+beforehand, it would appear as if the distance between us and the pulsar were
+changing sinusoidally--because it actually is changing sinusoidally due to the
+orbit of the pulsar around its companion! Many binary systems have been
+discovered this way, long before the optical telescopes verify the existence of
+the companion.
+\\
+To verify whether or not a sine-like signal corresponds to a gravitational wave,
+the data is searched for a time correlation between pulsars. If the sine wave
+shows up in multiple pulsars, then it can be concluded that the signal is not
+originating from an unmodelled process in any individual pulsar. Such a
+correlated signal must, then. correspond to some unmodelled process in the space
+between all the pulsars in the galaxy. Using the relative locations of the
+pulsars, specifics of the sine signal can be probed. Polarity and propagation
+direction can be ascertained from the relative amplitudes of the signals in the
+different pulsars in the pulsar timing array.
+
+\section{Stochastic Detection}
+While continuous wave sources are detectable by the PTA, the stochastic
+background of gravitational waves is what the PTA is best tuned for. The
+stochastic background of gravitational waves is the sum of all the gravitational
+waves passing through our galaxy. Dominating the stochastic background is the
+vast collection of graviational waves from supermassive black hole binaries.
+Using the pulsar timing array, the properties of the stochastic background can
+be probed. This is done by looking for correlated signals across the pulsars, in
+an analysis similar to the continuous wave search method. By looking for these
+correlated signals in the data, it is possible to ascertain the relative
+abundance of the frequencies of waves that contribute to the background. This
+data can be used, then, to look at the various proportions of black hole masses
+and orbital frequencies in the universe. This gives information on galaxy
+collision rates, as well as collision durations and galaxy black hole masses.
+
+\section{High-Frequency Continuous Wave Detection}
+    The International Pulsar Timing Array (IPTA) is tuned to probe GW
+frequencies in the months to years timescale. Observations of individual pulsars
+are carried out on a biweekly basis, due to the large amount of pulsars needed
+to be observed. With such infrequent observations, however, GW frequencies on
+the
+order of hours remain unexplored. This is due to the intrinsic limit on
+detection set by the Nyquist frequency, defined as the maximum frequency
+periodic signal that is detectable for a given sampling frequency. In order to
+accurately sample a periodic signal, it is necessary to sample at least twice
+per cycle to avoid introducing errors. Beyond
+this frequency, the sampling rate is not enough to properly detect a sine wave
+signal, and any such CW signal would appear as white noise in the data.
+\\
+    Recently, a 24 hour global observation was carried out on pulsar J1713+0747, which
+resulted in a new set of limits on Continuous Wave (CW) strain in the days to
+hours frequencies due to the average sampling rate of about 0.5 samples/min.
+Limits were set for both CW sources in the direction of J1713, as well as
+random-direction CW sources.
+\\
+  However, J1713 is not the only pulsar that has been observed for long,
+continuous observations. The pulsars J2302 and J0613 were each observed for
+multiple hours at a time, originally for the purpose of measuring the shapiro
+delay effect for each of the pulsars. Such data sets allow for analysis similar
+to that done to the J1713 24 hour campaign. These pulsars allow for better
+direcitonal limits to be placed in the microhertz to millihertz frequency range.
+
+\section{Data Used}
+ 
+\begin{figure}[h!]
+    \caption{Residual plot for the three-hour observation of J0613-0200.
+Integration time is 120s, and error bars are at the 1-sigma level. Data from
+four separate sub-bands in the 820MHz band are plotted.}
+    \includegraphics[width=0.6\textwidth]{./figures/J0613_residuals.png}
+\end{figure}
+
+\begin{figure}[h!]
+    \caption{Residual plot of the eight-hour observation of J2302+4442. The
+integration time is 120s, and the error bars are at the 1-sigma level. Data from
+four separate sub-bands in the 820MHz band are plotted.0}
+    \includegraphics[width=0.6\textwidth]{./figures/J2302_residuals.png}
+\end{figure}
+
+   In 2013, eight pulsars were observed for extended periods of time for the
+initial purpose of observing NANOGrav pulsars with significant Shapiro delays,
+targeted strategically in order to better observe the delays and therefore
+improve timing models (Pennucci et al. 2015, Fonseca et al. 2016). 
+Of the eight data sets, two were chosen for our
+analysis. Both J2302+4442 and J0613-0200 had small rms residual values, and
+long continuous timing tracks.  Each pulsar was observed three times over the
+course of the full observation period.  For each pulsar, the longest single
+observation track was selected for observation. J2302 was observed continuously
+for over 8 hours, and J0613 was observed continuously for over three hours.
+The residuals were generated using the tempo2 software, drawing its parameters
+from NANOGrav's 9 year data release. The binary orbit periods of each pulsar
+are of particular interest, as a binary period naturally weakens the
+sensitivity of the pulsar to continuous wave sources of a similar frequency.
+The binary period for pulsar J2302 is given as about 126 days, and the binary
+period for pulsar J0613 is given as about 1.2 days.
+
+\begin{figure}[h!]
+    \caption{Sky location in RA/DEC of the two pulsars analyzed (J0613-0200 and
+J2302+4442), as well as the previously-analyzed J1713+0747. Further analysis
+will put stronger limits on continuous wave strain amplitudes in the directions
+of J0613-0200 and J2302+4442.}
+    \includegraphics[width=0.6\textwidth]{./figures/skyplot.png}
+\end{figure}
+
+
+
+\section{Data Analysis}
+\subsection{Noise}
+   For each pulsar, we developed a noise modelto account for any intrinsic or
+extrinsic sources of noise in the data. The model included both white and red
+noise estimations. Five parameters were varied: EFAC, EQUAD, Jitter-EQUAD,
+RN-Amplitude, and RN-Spectral-Index. Using the Markov Chain Monte Carlo method
+for exploring parameter spaces, we found the maximum a posteriori values for
+each parameter, and used them to construct the noise covariance matrix.
+\\
+The five parameters were chosen for a noise model that has been used in
+previous analysis schemes. The EFAC parameter acts as a constant multiplier on
+the TOA uncertainties. The EQUAD parameters represent additional Gaussian white
+noise added to the EFAC noise. The RN-Amplitude and RN-Spectral-Index parameters
+describe a red noise variance. 
+
+\subsection{Detection Statistic}
+
+\begin{figure}[h!]
+\caption{The Fp statistic calculated from the residuals. The dashed line shows
+the minimum Fp value needed to claim a detection with a false alarm probability
+of 1e-4.}
+\includegraphics[width=0.6\textwidth]{./figures/both_fp.png}
+\end{figure}
+
+    Our main tool for analyzing the sensitivity of a pulsar to continuous wave
+sources is the $F_p$ statistic, developed by Justin Ellis (Arzoumanian et. al
+2014). The
+$F_p$ statistic is a frequentist detection statistic. It can be thought of as a
+measure of how much a particular frequency dominates the data. A high $F_p$
+statistic is indicative of a potential CW source at that frequency. For each
+potential CW frequency, we calculate the $F_p$ statistic for the data at that
+frequency. Our detection threshold of about $F_p \geq 13$ corresponds to a false
+alarm probability of $10^{-4}$.
+
+\subsection{Upper Limits and Source Simulation}
+
+After creating the noise model for the pulsar, we determine the sensitivity to
+CW sources at different gravitational wave frequencies. On a high level, this
+is done by simulating CW sources in random directions with a given strain, and
+seeing if they can be detected with the given noise model. By ramping up the
+simulated strain until a detection is made, we obtain the lowest detectable
+strain--the strain limit--for that GW frequency. To determine whether or not a
+specific strain can be detected, we simulate 5000 sources sequentially in
+either random directions or, in the case of a directional search, in the
+direction of the pulsar. Each source is simulated with a random inclination,
+and a set distance to keep the strain amplitude constant. Then, for each
+source, we create simulated residuals based on the CW source and the noise
+model, and generate an$f_p$statistic. A source is labelled "detectable" if the
+Fp statistic is higher than the actual data's$f_p$statistic. If more than 95\% of
+the simulated sources are detectable, then it can be concluded that a CW source
+with a strain equal to the fixed strain is detectable above the noise. Thus,
+that strain is an upper bound on CW source strains for the particular GW
+frequency being examined.
+
+\section{Results}
+
+\begin{figure}
+    \caption{Recent single-source GW limits from the PPTA, EPTA, and NANOGrav,
+as well as single-pulsar limits from J0437-0745 and B1937+21. Also plotted is
+the high frequency limits obtained in this analysis from J0613-0200 and
+J2302+4442, and the previously published limit from J1713+0747.}
+    \includegraphics[width=1\textwidth]{./figures/all_limits.png}
+    \includegraphics[width=1\textwidth]{./figures/hf_limits.png}
+\end{figure}
+
+Applying the $f_p$ statistic algorithm to the two pulsars analyzed, we found
+there was no evidence for a single source gravitational wave signal. However,
+using the source simulation algorithm, we were able to place upper limits on the
+strength of the gravitational waves passing through the galaxy at the
+frequencies probed. Such limits were in coincidence with previously published
+limits from pulsar J1713+0747. Furthermore, the results coincide with a
+reasonable extrapolation of the results obtained by NANOGrav and the other PTA
+consortia.
+
+\section{Conclusion}
+    Using our pipeline, we were able to recreate the omnidirecitonal and
+directional limits from the J1713 24 hour global campaign, which verified the
+integrity of our analysis algorithm. Using data from the Green Bank Telescope
+taken to measure shapiro delay effects on PSR J0613-0200 and PSR J2302+4442, we
+were able to place omnidirectional limits consistent with limits already placed
+in that GW frequency range. 
+    While these limit curves do add confidence to the current strain limit given
+by analysis of J1713, further analysis will be able to place more strict
+directional limits on CW strain amplitude in directions that have not been
+probed before in this frequency range.
+\\
+    Further analysis will attempt to remove statistical fluctuations in the data
+through using a greater amount of simulations. Furthermore, the noise model can
+be improved upon by sampling the parameter space of the noise model more
+precisely. Directional limits can be placed in the direction of both J2302 and
+J0613. Also, similar analyses can be carried out on each of the other six
+pulsars observed by the Green Bank Telescope in the shapiro delay project. For
+each pulsar, strict directional limits on CW strain amplitude can be placed for
+GW frequencies in the microhertz to millihertz range.
+
+\newpage
+\section{Bibliography}
+\noindent Lorimer, D.~R.\ 2008, Living Reviews in Relativity, 11,
+\newline\noindent Dolch, T., NANOGrav Collaboration, Ellis, J.~A., et al.\ 2016,
+Journal of Physics Conference Series, 716, 012014
+\newline\noindent Arzoumanian, Z., Brazier, A., Burke-Spolaor, S., et al.\ 2014,
+\apj, 794, 141
+\newline\noindent Pennucci et al. \ 2015
+\newline\noindent Fonseca et al. \ 2016
+%\newline\noindent
+
+\end{document}
