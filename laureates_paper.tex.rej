@@ -1,0 +1,68 @@
+*** /dev/null
+--- /dev/null
+***************
+*** 266,268
+- The International Pulsar Timing Array (IPTA) is tuned to probe GW
+- frequencies in the months to years timescale. Observations of individual pulsars
+- are carried out on a biweekly basis, due to the large amount of pulsars needed
+--- 270,273 -----
++ 
++ The International Pulsar Timing Array (IPTA) is tuned to probe GW
++ frequencies in the months-to-years timescale. Observations of individual pulsars
++ are carried out on a biweekly basis, due to the large number of pulsars that need
+***************
+*** 278,281
+- \\
+- Recently, a 24 hour global observation was carried out on pulsar J1713+0747, which
+- resulted in a new set of limits on Continuous Wave (CW) strain in the days to
+- hours frequencies due to the average sampling rate of about 0.5 samples/min.
+--- 283,286 -----
++ 
++ Recently, a 24-hour global observation was carried out on J1713+0747, a particular pulsar, which
++ resulted in a new set of limits on continuous wave (CW) strain in the days to
++ hours frequencies due to the average sampling rate of about 0.5 samples/min (Dolch et al.~2016).
+***************
+*** 295
+- \caption{Residual plot for the three-hour observation of J0613-0200.
+--- 300 -----
++ \caption{Residual plot for the three-hour observation of J0613--0200.
+***************
+*** 298
+- \includegraphics[width=0.6\textwidth]{./figures/J0613_residuals.png}
+--- 303 -----
++ \includegraphics[width=\textwidth]{./figures/J0613_residuals.png}
+***************
+*** 304,305
+- four separate sub-bands in the 820MHz band are plotted.0}
+- \includegraphics[width=0.6\textwidth]{./figures/J2302_residuals.png}
+--- 309,310 -----
++ four separate sub-bands in the 820MHz band are plotted.}
++ \includegraphics[width=\textwidth]{./figures/J2302_residuals.png}
+***************
+*** 308
+- In 2013, eight pulsars were observed for extended periods of time for the
+--- 313 -----
++ In 2013, eight pulsars were observed for extended periods of time with the GBT for the
+***************
+*** 326
+- \caption{Sky location in RA/DEC of the two pulsars analyzed (J0613-0200 and
+--- 331 -----
++ \caption{Sky location in RA/DEC of the two pulsars analyzed (J0613--0200 and
+***************
+*** 329,330
+- of J0613-0200 and J2302+4442.}
+- \includegraphics[width=0.6\textwidth]{./figures/skyplot.png}
+--- 334,335 -----
++ of J0613--0200 and J2302+4442.}
++ \includegraphics[width=\textwidth]{./figures/skyplot.png}
+***************
+*** 337
+- For each pulsar, we developed a noise modelto account for any intrinsic or
+--- 342 -----
++ For each pulsar, we developed a noise model to account for any intrinsic or
+***************
+*** 410,411
+- Using our pipeline, we were able to recreate the omnidirecitonal and
+- directional limits from the J1713 24 hour global campaign, which verified the
+--- 415 -----
++ Using our pipeline, we were able to recreate the omnidirecitonal limits from the J1713 24-hour global campaign, which verified the

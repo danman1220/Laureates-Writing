@@ -1,0 +1,315 @@
+master/laureates_paper.tex
+27a28,29
+> 
+> 
+33a36,37
+> \bigskip
+> 
+35,36c39
+< \author{Daniel Halmrast}
+< %\author{Advisor: Timothy Dolch}
+---
+> \author{Daniel Halmrast \\ Advisor: Timothy Dolch}
+52,53c55,56
+< The search for low frequency gravitational waves in the universe is currently
+< best carried out using Pulsar Timing Arrays. The incredible precision timing of
+---
+> The search for low-frequency gravitational waves in the universe is currently
+> best carried out using Pulsar Timing Arrays (PTAs). The incredible precision timing of
+57c60
+< \\
+---
+> 
+62c65
+< \\
+---
+> 
+69c72
+< gives information analagous to the projection of the wave onto the line of
+---
+> gives information analogous to the projection of the wave onto the line of
+74c77
+< \\
+---
+> 
+82c85
+< \\
+---
+> 
+92c95
+< \\
+---
+> 
+102c105
+< past its Scwarzshield radius, the core will collapse into a black hole. On the
+---
+> past its Schwarzschild radius, the core will collapse into a black hole. On the
+108,109c111,112
+< Neutron stars are the most extreme objects in the universe. With such intense
+< gravitational pressure forming them, high-energy nuclear processes occur in the
+---
+> Neutron stars are the most extreme objects in the universe after black holes. With such intense
+> gravitational forces forming them, high-energy nuclear processes occur in the
+117,118c120,121
+< material forms the star, which is spherical with a diameter of about 10km.
+< \\
+---
+> material forms the star, which is spherical with a diameter of about 10\,km.
+> 
+120c123
+< will be "spun up" to high angular speeds. If the star was in a binary system,
+---
+> will be ``spun up'' to high angular speeds. If the star was in a binary system,
+124c127
+< \\
+---
+> 
+126c129
+< to 1e8 times as much as the earth. For neutron stars that are spinning rapidly,
+---
+> to $10^8$ times as much as the earth. For neutron stars that are spinning rapidly,
+130,131c133,134
+< \\
+< A pulsar is exactly this sort of object--a rotating neutron star with beam
+---
+> 
+> A pulsar is exactly this sort of object: a rotating neutron star with beam
+135c138
+< As seen in the P-Pdot diagram, there exists a certain class of
+---
+> As seen in the P-Pdot diagram (Figure 1), there exists a certain class of
+139c142
+< well as stellar timekeepers--some rivaling even an atomic clock's precision. It
+---
+> well as stellar timekeepers, with some rivaling even an atomic clock's precision. It
+141c144
+< gravitational wave searches.
+---
+> gravitational wave searches with pulsars.
+144c147
+< \caption{The P-Pdot diagram for pulsars. Here rotational periods (x-axis) are
+---
+> \caption{The P-Pdot diagram (Lorimer 2008). Here rotational periods (x-axis) are
+147c150
+< \includegraphics[width=0.6\textwidth]{./figures/fig_P_Pdot_with_names.png}
+---
+> \includegraphics[width=\textwidth]{./figures/fig_P_Pdot_with_names.png}
+152c155
+< quadropole somewhere in the universe. The most common sources of gravitational
+---
+> mass quadrupole moment somewhere in the universe. The most common sources of gravitational
+155c158
+< gravitational waves that give rise to the perturbation [GW equation].
+---
+> gravitational waves that give rise to the perturbation.
+160,161c163,164
+< \\
+< The LIGO detectors recently announced the first detection of gravitational
+---
+> 
+> The Laser Interferometer Gravitational-Wave Observatory (LIGO) detectors recently announced the first detection of gravitational
+167c170
+< interferometer is able to precisely measure miniscule changes in the
+---
+> interferometer is able to precisely measure minuscule changes in the
+176c179
+< "reference beam", and the changing arm as the "detector beam". With this mode of
+---
+> ``reference beam'', and the changing arm as the ``detector beam''. With this mode of
+179c182
+< \\
+---
+> 
+188c191
+< \\
+---
+> 
+201,202c204,206
+< orbiting pulsars.
+< The ultimate goal of the timing model is to "zero out" any known effects between
+---
+> orbiting pulsars. The Shapiro delay is a time dilation in a pulsar's pulsation rate when those pulses pass near a massive object (in this case, the object being the pulsar's binary companion).
+> 
+> The ultimate goal of the timing model is to ``zero out'' any known effects between
+204,207c208,211
+< the timing model must be due to some unmodelled effect.
+< \\
+< At regular intervals, NANOGrav observes the 43 [?] pulsars that are in the
+< pulsar timing array. such observations allow comparisions to be made between the
+---
+> the timing model must be due to some unmodeled effect.
+> 
+> At regular intervals, the North American Nanohertz Observatory for Gravitational Waves (NANOGrav) observes the 47 pulsars that are in the
+> pulsar timing array using the Arecibo Observatory in Puerto Rico and the Green Bank Telescope (GBT) in West Virginia. Such observations allow comparisons to be made between the
+212,213c216,217
+< Thus, the timing model is "self-correcting" in the sense that
+< observations themselves improve the precision of the timing model.
+---
+> Thus, the timing model is ``self-correcting'' in the sense that
+> observations themselves improve the precision of the timing model (see Figure 2).
+217,218c221,222
+< and correctable signatures in the residual data.}
+< \includegraphics[width=0.6\textwidth]{./figures/bad_timing.png}
+---
+> and correctable signatures in the residual data (from Lorimer 2008).}
+> \includegraphics[width=\textwidth]{./figures/bad_timing.png}
+224c228
+< unmodelled processes. Of the most importance is the deviation corresponding to a
+---
+> unmodeled processes. Of the most importance is the deviation corresponding to a
+228c232
+< that such a sine-like signal corresponds to an unmodelled process in the timing
+---
+> that such a sine-like signal corresponds to an unmodeled process in the timing
+231c235
+< changing sinusoidally--because it actually is changing sinusoidally due to the
+---
+> changing sinusoidally because it actually is changing sinusoidally due to the
+233c237
+< discovered this way, long before the optical telescopes verify the existence of
+---
+> discovered this way, long before optical telescopes verify the existence of
+235c239
+< \\
+---
+> 
+239,240c243,244
+< originating from an unmodelled process in any individual pulsar. Such a
+< correlated signal must, then. correspond to some unmodelled process in the space
+---
+> originating from an unmodeled process in any individual pulsar. Such a
+> correlated signal must, then, correspond to some unmodled process in the space
+251c255
+< vast collection of graviational waves from supermassive black hole binaries.
+---
+> vast collection of gravitational waves from supermassive black hole binaries.
+262,264c266,269
+< The International Pulsar Timing Array (IPTA) is tuned to probe GW
+< frequencies in the months to years timescale. Observations of individual pulsars
+< are carried out on a biweekly basis, due to the large amount of pulsars needed
+---
+> 
+> The International Pulsar Timing Array (IPTA) is tuned to probe GW
+> frequencies in the months-to-years timescale. Observations of individual pulsars
+> are carried out on a biweekly basis, due to the large number of pulsars that need
+274,277c279,282
+< \\
+< Recently, a 24 hour global observation was carried out on pulsar J1713+0747, which
+< resulted in a new set of limits on Continuous Wave (CW) strain in the days to
+< hours frequencies due to the average sampling rate of about 0.5 samples/min.
+---
+> 
+> Recently, a 24-hour global observation was carried out on J1713+0747, a particular pulsar, which
+> resulted in a new set of limits on continuous wave (CW) strain in the days to
+> hours frequencies due to the average sampling rate of about 0.5 samples/min (Dolch et al.~2016).
+280c285
+< \\
+---
+> 
+282,286c287,291
+< continuous observations. The pulsars J2302 and J0613 were each observed for
+< multiple hours at a time, originally for the purpose of measuring the shapiro
+< delay effect for each of the pulsars. Such data sets allow for analysis similar
+< to that done to the J1713 24 hour campaign. These pulsars allow for better
+< direcitonal limits to be placed in the microhertz to millihertz frequency range.
+---
+> continuous observations. The pulsars J2302+4442 and J0613--0200 were each observed for
+> multiple hours at a time at the GBT, originally for the purpose of measuring the Shapiro
+> delay effect for each of the pulsars (Pennucci et al.~2015, Fonseca et al.~2016). Such data sets (see Figures 3 and 4) allow for analysis similar
+> to that done to the J1713 24-hour campaign. These pulsars allow for better
+> directional limits to be placed in the microhertz to millihertz frequency range (Figure 5).
+291c296
+< \caption{Residual plot for the three-hour observation of J0613-0200.
+---
+> \caption{Residual plot for the three-hour observation of J0613--0200.
+294c299
+< \includegraphics[width=0.6\textwidth]{./figures/J0613_residuals.png}
+---
+> \includegraphics[width=\textwidth]{./figures/J0613_residuals.png}
+300,301c305,306
+< four separate sub-bands in the 820MHz band are plotted.0}
+< \includegraphics[width=0.6\textwidth]{./figures/J2302_residuals.png}
+---
+> four separate sub-bands in the 820MHz band are plotted.}
+> \includegraphics[width=\textwidth]{./figures/J2302_residuals.png}
+304c309
+< In 2013, eight pulsars were observed for extended periods of time for the
+---
+> In 2013, eight pulsars were observed for extended periods of time with the GBT for the
+309c314
+< analysis. Both J2302+4442 and J0613-0200 had small rms residual values, and
+---
+> analysis. Both J2302+4442 and J0613--0200 had small rms residual values, and
+315c320
+< from NANOGrav's 9 year data release. The binary orbit periods of each pulsar
+---
+> from NANOGrav's 9-year data release. The binary orbit periods of each pulsar
+322c327
+< \caption{Sky location in RA/DEC of the two pulsars analyzed (J0613-0200 and
+---
+> \caption{Sky location in RA/DEC of the two pulsars analyzed (J0613--0200 and
+325,326c330,331
+< of J0613-0200 and J2302+4442.}
+< \includegraphics[width=0.6\textwidth]{./figures/skyplot.png}
+---
+> of J0613--0200 and J2302+4442.}
+> \includegraphics[width=\textwidth]{./figures/skyplot.png}
+333c338
+< For each pulsar, we developed a noise modelto account for any intrinsic or
+---
+> For each pulsar, we developed a noise model to account for any intrinsic or
+339c344
+< \\
+---
+> 
+356c361
+< sources is the $F_p$ statistic, developed by Justin Ellis (Arzoumanian et. al
+---
+> sources is the $F_p$ statistic, developed by Justin Ellis (Arzoumanian~et.~al
+378,379c383,384
+< model, and generate an$f_p$statistic. A source is labelled "detectable" if the
+< Fp statistic is higher than the actual data's$f_p$statistic. If more than 95\% of
+---
+> model, and generate an $f_p$ statistic. A source is labelled ``detectable'' if the
+> Fp statistic is higher than the actual data's $f_p$ statistic. If more than 95\% of
+390c395
+< the high frequency limits obtained in this analysis from J0613-0200 and
+---
+> the high frequency limits obtained in this analysis from J0613--0200 and
+406,407c411
+< Using our pipeline, we were able to recreate the omnidirecitonal and
+< directional limits from the J1713 24 hour global campaign, which verified the
+---
+> Using our pipeline, we were able to recreate the omnidirecitonal limits from the J1713 24-hour global campaign, which verified the
+409c413
+< taken to measure shapiro delay effects on PSR J0613-0200 and PSR J2302+4442, we
+---
+> taken to measure Shapiro delay effects on PSR J0613--0200 and PSR J2302+4442, we
+416c420
+< \\
+---
+> 
+422c426
+< pulsars observed by the Green Bank Telescope in the shapiro delay project. For
+---
+> pulsars observed by the Green Bank Telescope in the Shapiro delay project. For
+428c432,434
+< \noindent Lorimer, D.~R.\ 2008, Living Reviews in Relativity, 11,
+---
+> \newline\noindent Arzoumanian, Z., Brazier, A., Burke-Spolaor, S., et al.\ 2014,
+> Astrophysical Journal, 794, 141
+> \\
+431,434c437,438
+< \newline\noindent Arzoumanian, Z., Brazier, A., Burke-Spolaor, S., et al.\ 2014,
+< \apj, 794, 141
+< \newline\noindent Pennucci et al. \ 2015
+< \newline\noindent Fonseca et al. \ 2016
+---
+> \\
+> \newline\noindent Fonseca, E., Pennucci, T.~T., Ellis, J.~A., et al.\ 2016, arXiv:1603.00545
+435a440,444
+> \\
+> \newline\noindent Lorimer, D.~R.\ 2008, Living Reviews in Relativity, 11
+> \\
+> \newline\noindent Pennucci, T.~T.\ 2015, Ph.D.~Thesis
+> \\
