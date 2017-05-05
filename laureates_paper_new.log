@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=latex 2016.10.6)  11 APR 2017 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=latex 2016.10.6)  5 MAY 2017 18:59
 entering extended mode
 **./laureates_paper_new.tex
 (laureates_paper_new.tex
@@ -217,51 +217,76 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \c@SC@C=\count98
 \SC@BOX=\box26
 )
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count99
+\lst@gtempboxa=\box27
+\lst@token=\toks16
+\lst@length=\count100
+\lst@currlwidth=\dimen113
+\lst@column=\count101
+\lst@pos=\count102
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
+\lst@newlines=\count103
+\lst@lineno=\count104
+\lst@maxwidth=\dimen116
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count105
+\lst@skipnumbers=\count106
+\lst@framebox=\box28
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (laureates_paper_new.aux)
 \openout1 = `laureates_paper_new.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
-\scratchdimen=\dimen113
-\scratchbox=\box27
-\nofMPsegments=\count100
-\nofMParguments=\count101
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count102
-\MPscratchDim=\dimen114
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count107
+\scratchdimen=\dimen117
+\scratchbox=\box29
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen118
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks18
 )
-\AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 37.
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 35.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count105
+\c@section@level=\count113
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (laureates_paper_new.out) (laureates_paper_new.out)
 \@outlinefile=\write3
@@ -292,19 +317,26 @@ LaTeX Info: Redefining \selectfont on input line 126.
 \RaggedRightParindent=\skip56
 \JustifyingParindent=\skip57
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+\c@lstlisting=\count114
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (15.13483pt too wide) in paragraph at lines 45--54
+\OT1/cmr/m/n/10.95 Us-ing such sin-gle pul-sar ob-ser-va-tions from the North A
+mer-i-can Nanohertz
+ []
 
-{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-<./figures/fig_P_Pdot_with_names.png, id=97, 752.8125pt x 695.59875pt>
+[1
+
+{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+[3] <./figures/fig_P_Pdot_with_names.png, id=98, 752.8125pt x 695.59875pt>
 File: ./figures/fig_P_Pdot_with_names.png Graphic file (type png)
 
 <use ./figures/fig_P_Pdot_with_names.png>
@@ -312,171 +344,258 @@ Package pdftex.def Info: ./figures/fig_P_Pdot_with_names.png used on input line
  153.
 (pdftex.def)             Requested size: 390.0pt x 360.36546pt.
  [4] [5 <./figures/fig_P_Pdot_with_names.png (PNG copy)>]
-<./figures/bad_timing.png, id=110, 469.755pt x 320.69812pt>
+<./figures/bad_timing.png, id=109, 469.755pt x 320.69812pt>
 File: ./figures/bad_timing.png Graphic file (type png)
 
 <use ./figures/bad_timing.png>
-Package pdftex.def Info: ./figures/bad_timing.png used on input line 225.
+Package pdftex.def Info: ./figures/bad_timing.png used on input line 233.
 (pdftex.def)             Requested size: 390.0pt x 266.24786pt.
  [6] [7 <./figures/bad_timing.png>] [8]
-<./figures/J0613_residuals.png, id=127, 722.7pt x 505.89pt>
+<./figures/J0613_residuals.png, id=126, 722.7pt x 505.89pt>
 File: ./figures/J0613_residuals.png Graphic file (type png)
 
 <use ./figures/J0613_residuals.png>
-Package pdftex.def Info: ./figures/J0613_residuals.png used on input line 302.
+Package pdftex.def Info: ./figures/J0613_residuals.png used on input line 311.
 (pdftex.def)             Requested size: 390.0pt x 272.99898pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/J2302_residuals.png, id=128, 722.7pt x 505.89pt>
+<./figures/J2302_residuals.png, id=127, 722.7pt x 505.89pt>
 File: ./figures/J2302_residuals.png Graphic file (type png)
 
 <use ./figures/J2302_residuals.png>
-Package pdftex.def Info: ./figures/J2302_residuals.png used on input line 309.
+Package pdftex.def Info: ./figures/J2302_residuals.png used on input line 318.
 (pdftex.def)             Requested size: 390.0pt x 272.99898pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] <./figures/skyplot.png, id=133, 722.7pt x 505.89pt>
+[9] <./figures/skyplot.png, id=132, 722.7pt x 505.89pt>
 File: ./figures/skyplot.png Graphic file (type png)
 
 <use ./figures/skyplot.png>
-Package pdftex.def Info: ./figures/skyplot.png used on input line 334.
+Package pdftex.def Info: ./figures/skyplot.png used on input line 343.
 (pdftex.def)             Requested size: 390.0pt x 272.99898pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10 <./figures/J0613_residuals.png>] [11 <./figures/J2302_residuals.png>]
-<./figures/both_fp.png, id=146, 722.7pt x 505.89pt>
+<./figures/both_fp.png, id=145, 722.7pt x 505.89pt>
 File: ./figures/both_fp.png Graphic file (type png)
 
 <use ./figures/both_fp.png>
-Package pdftex.def Info: ./figures/both_fp.png used on input line 360.
+Package pdftex.def Info: ./figures/both_fp.png used on input line 369.
 (pdftex.def)             Requested size: 390.0pt x 272.99898pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12 <./figures/skyplot.png>] [13 <./figures/both_fp.png>]
-<./figures/all_limits.png, id=160, 722.7pt x 505.89pt>
+<./figures/all_limits.png, id=159, 722.7pt x 505.89pt>
 File: ./figures/all_limits.png Graphic file (type png)
 
 <use ./figures/all_limits.png>
-Package pdftex.def Info: ./figures/all_limits.png used on input line 400.
+Package pdftex.def Info: ./figures/all_limits.png used on input line 411.
 (pdftex.def)             Requested size: 390.0pt x 272.99898pt.
 
-<./figures/hf_limits.png, id=161, 722.7pt x 505.89pt>
+<./figures/hf_limits.png, id=160, 722.7pt x 505.89pt>
 File: ./figures/hf_limits.png Graphic file (type png)
 
 <use ./figures/hf_limits.png>
-Package pdftex.def Info: ./figures/hf_limits.png used on input line 401.
+Package pdftex.def Info: ./figures/hf_limits.png used on input line 412.
 (pdftex.def)             Requested size: 390.0pt x 272.99898pt.
 
 
-LaTeX Warning: Float too large for page by 63.66458pt on input line 402.
+LaTeX Warning: Float too large for page by 63.66458pt on input line 413.
 
-[14] [15 <./figures/all_limits.png> <./figures/hf_limits.png>]
-Overfull \hbox (3.0779pt too wide) in paragraph at lines 449--453
+[14] [15 <./figures/all_limits.png> <./figures/hf_limits.png>] [16]
+Overfull \hbox (16.31625pt too wide) in paragraph at lines 521--523
+\OT1/cmr/m/n/12 Tempo2 can be found at []$\OT1/cmtt/m/n/12 https : / / bitbucke
+t . org / psrsoft / tempo2$[]\OT1/cmr/m/n/12 , or grabbed
+ []
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+[17]
+Overfull \hbox (3.0779pt too wide) in paragraph at lines 528--532
 []\OT1/cmr/m/n/12 After get-ting all the files, fol-low the in-struc-tions in-c
 luded in the README.
  []
 
-[16]
-Overfull \hbox (202.51607pt too wide) in paragraph at lines 500--513
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--586
+
+ []
+
+[18]
+Overfull \hbox (9.59486pt too wide) in paragraph at lines 590--594
 []\OT1/cmr/m/n/12 Second, you'll want to grab an en-vi-ron-ment man-ager like A
-na-conda (https://docs.continuum.io/anaconda/install)
+na-conda ([]$\OT1/cmtt/m/n/12 https :
  []
 
 
-Overfull \hbox (198.88637pt too wide) in paragraph at lines 514--525
-[][][][][][] [][][][][][]
+Underfull \hbox (badness 10000) in paragraph at lines 590--594
+
  []
 
 
-Overfull \hbox (23.05858pt too wide) in paragraph at lines 526--533
+Underfull \hbox (badness 10000) in paragraph at lines 597--601
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 602.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 602.
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--617
+
+ []
+
+
+Overfull \hbox (54.14923pt too wide) in paragraph at lines 619--620
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
+
+ []
+
+
+Overfull \hbox (23.05858pt too wide) in paragraph at lines 627--631
 []\OT1/cmr/m/n/12 If ev-ery-thing worked suc-cess-fully, the scripts \OT1/cmtt/
 m/n/12 makeh5File.py \OT1/cmr/m/n/12 and \OT1/cmtt/m/n/12 PAL2[]run.py
  []
 
-[17]
-Overfull \hbox (11.2002pt too wide) in paragraph at lines 556--567
-[][][][][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--631
+
  []
 
 
-Overfull \hbox (340.91144pt too wide) in paragraph at lines 575--588
-[][][][][][] [][][][][][]
+Underfull \hbox (badness 10000) in paragraph at lines 640--651
+
+ []
+
+[19]
+Overfull \hbox (84.33566pt too wide) in paragraph at lines 656--659
+[]\OT1/cmr/m/n/12 If ev-ery-thing worked suc-cess-fully, there should now be a 
+file called \OT1/cmtt/m/n/12 "name[]of[]output.hdf5"
  []
 
 
-Overfull \hbox (198.88637pt too wide) in paragraph at lines 575--588
-[][][][][][] [][][][][][]
+Underfull \hbox (badness 10000) in paragraph at lines 662--668
+
  []
 
-[18]
-Overfull \hbox (3.48619pt too wide) in paragraph at lines 592--595
+
+Overfull \hbox (61.19922pt too wide) in paragraph at lines 670--671
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 671.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 671.
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--688
+
+ []
+
+[20]
+Overfull \hbox (61.19922pt too wide) in paragraph at lines 690--691
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.48619pt too wide) in paragraph at lines 704--707
 []\OT1/cmr/m/n/12 If ev-ery-thing worked suc-cess-fully, there should now be a 
 numpy-compatible
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 598--611
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 710--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--611
+Underfull \hbox (badness 10000) in paragraph at lines 710--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--611
+Underfull \hbox (badness 10000) in paragraph at lines 710--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--611
+Underfull \hbox (badness 10000) in paragraph at lines 710--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--611
+Underfull \hbox (badness 10000) in paragraph at lines 710--724
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 612.
-[20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 612.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
+[22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
  (laureates_paper_new.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 612.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 612.
-Package rerunfilecheck Info: File `laureates_paper_new.out' has not changed.
-(rerunfilecheck)             Checksum: DB604FBCEB48606CD7EEF8D3A370CA1D;1123.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 612.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 725.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
+
+
+Package rerunfilecheck Warning: File `laureates_paper_new.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `laureates_paper_new.out':
+(rerunfilecheck)             Before: C2A9ED8AEDA8A58A75404FDC0ED43C47;1067
+(rerunfilecheck)             After:  0D99B17C7F40E053A0E6B4EE52F37675;1271.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 725.
  ) 
 Here is how much of TeX's memory you used:
- 5954 strings out of 493335
- 88497 string characters out of 3136695
- 171826 words of memory out of 3000000
- 9374 multiletter control sequences out of 15000+200000
- 12265 words of font info for 48 fonts, out of 3000000 for 9000
+ 7409 strings out of 493335
+ 109596 string characters out of 3136695
+ 217061 words of memory out of 3000000
+ 10763 multiletter control sequences out of 15000+200000
+ 13180 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,28p,417b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on laureates_paper_new.pdf (20 pages, 439939 bytes).
+ 32i,6n,51p,417b,1150s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on laureates_paper_new.pdf (22 pages, 492017 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

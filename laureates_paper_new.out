@@ -1,19 +1,21 @@
-\BOOKMARK [1][-]{section.1}{Abstract}{}% 1
-\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
-\BOOKMARK [1][-]{section.3}{Background}{}% 3
-\BOOKMARK [1][-]{section.4}{Stochastic Detection}{}% 4
-\BOOKMARK [1][-]{section.5}{High-Frequency Continuous Wave Detection}{}% 5
-\BOOKMARK [1][-]{section.6}{Data Used}{}% 6
-\BOOKMARK [1][-]{section.7}{Data Analysis}{}% 7
-\BOOKMARK [2][-]{subsection.7.1}{Noise}{section.7}% 8
-\BOOKMARK [2][-]{subsection.7.2}{Detection Statistic}{section.7}% 9
-\BOOKMARK [2][-]{subsection.7.3}{Upper Limits and Source Simulation}{section.7}% 10
-\BOOKMARK [1][-]{section.8}{Results}{}% 11
-\BOOKMARK [1][-]{section.9}{Conclusion}{}% 12
-\BOOKMARK [1][-]{section.10}{Appendix A}{}% 13
-\BOOKMARK [2][-]{subsection.10.1}{Installing tempo2}{section.10}% 14
-\BOOKMARK [2][-]{subsection.10.2}{Installing PAL2}{section.10}% 15
-\BOOKMARK [2][-]{subsection.10.3}{Generating an hdf5 file}{section.10}% 16
-\BOOKMARK [2][-]{subsection.10.4}{Generating Noise}{section.10}% 17
-\BOOKMARK [2][-]{subsection.10.5}{Generating an Upper Limit}{section.10}% 18
-\BOOKMARK [1][-]{section.11}{Bibliography}{}% 19
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [1][-]{section.3}{Stochastic Detection}{}% 3
+\BOOKMARK [1][-]{section.4}{High-Frequency Continuous Wave Detection}{}% 4
+\BOOKMARK [1][-]{section.5}{Data Used}{}% 5
+\BOOKMARK [1][-]{section.6}{Data Analysis}{}% 6
+\BOOKMARK [2][-]{subsection.6.1}{Noise}{section.6}% 7
+\BOOKMARK [2][-]{subsection.6.2}{Detection Statistic}{section.6}% 8
+\BOOKMARK [2][-]{subsection.6.3}{Upper Limits and Source Simulation}{section.6}% 9
+\BOOKMARK [1][-]{section.7}{Results}{}% 10
+\BOOKMARK [2][-]{subsection.7.1}{Pulsar J0613-0200}{section.7}% 11
+\BOOKMARK [2][-]{subsection.7.2}{Pulsar J0645+5158}{section.7}% 12
+\BOOKMARK [2][-]{subsection.7.3}{Pulsar J2302+4442}{section.7}% 13
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 14
+\BOOKMARK [1][-]{section.9}{Appendix A}{}% 15
+\BOOKMARK [2][-]{subsection.9.1}{Installing tempo2}{section.9}% 16
+\BOOKMARK [2][-]{subsection.9.2}{Installing PAL2}{section.9}% 17
+\BOOKMARK [2][-]{subsection.9.3}{Generating an hdf5 file}{section.9}% 18
+\BOOKMARK [2][-]{subsection.9.4}{Generating Noise}{section.9}% 19
+\BOOKMARK [2][-]{subsection.9.5}{Generating an Upper Limit}{section.9}% 20
+\BOOKMARK [1][-]{section.10}{Bibliography}{}% 21
