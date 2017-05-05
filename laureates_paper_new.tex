@@ -336,10 +336,10 @@ The binary period for pulsar J2302 is given as about 126 days, and the binary
 period for pulsar J0613 is given as about 1.2 days.
 
 \begin{figure}[h!]
-    \caption{Sky location in RA/DEC of the two pulsars analyzed (J0613--0200 and
-J2302+4442), as well as the previously-analyzed J1713+0747. Further analysis
-will put stronger limits on continuous wave strain amplitudes in the directions
-of J0613--0200 and J2302+4442.}
+    \caption{Sky location in RA/DEC of the three pulsars analyzed (J0613--0200,
+    J0645+5158, and
+J2302+4442), as well as the previously-analyzed J1713+0747. Directional limits
+    are placed in the directions of J2302 and J0645}
     \includegraphics[width=\textwidth]{./figures/skyplot.png}
 \end{figure}
 
@@ -366,7 +366,7 @@ describe a red noise variance.
 \caption{The $F_p$ statistic calculated from the residuals. The dashed line shows
     the minimum $F_p$ value needed to claim a detection with a false alarm probability
     of 1e-4.}
-\includegraphics[width=\textwidth]{./figures/both_fp.png}
+\includegraphics[width=\textwidth]{./figures/both_fp_presentation.png}
 \end{figure}
 
     Our main tool for analyzing the sensitivity of a pulsar to continuous wave
@@ -406,9 +406,10 @@ frequency being examined.
 \begin{figure}
     \caption{Recent single-source GW limits from the PPTA, EPTA, and NANOGrav,
 as well as single-pulsar limits from J0437-0745 and B1937+21. Also plotted is
-the high frequency limits obtained in this analysis from J0613--0200 and
+the high frequency limits obtained in this analysis from J0613--0200,
+    J0645+5158, and
 J2302+4442, and the previously published limit from J1713+0747.}
-    \includegraphics[width=1\textwidth]{./figures/all_limits.png}
+    \includegraphics[width=1\textwidth]{./figures/all_limits_incfall.png}
     \includegraphics[width=1\textwidth]{./figures/hf_limits.png}
 \end{figure}
 
@@ -471,6 +472,13 @@ frequency beyond the other pulsars analyzed.
 J2302 also provided good directional limits, which again were consistently about
 an order of magnitude below the corresponding directional limit.
 
+\begin{figure}
+    \caption{Directional limits established in the direction of J2302 and J0645.
+    Also plotted is the J0613 directional limit, which was significantly higher
+    than expected.}
+    \includegraphics[width=1\textwidth]{./figures/all_directional.png}
+\end{figure}
+
 \section{Conclusion}
     Using our pipeline, we were able to recreate the omnidirecitonal limits from the J1713 24-hour global campaign, which verified the
 integrity of our analysis algorithm. Using data from the Green Bank Telescope
@@ -508,7 +516,7 @@ these sorts of sources. Work is being done to modify the PTA analysis for
 intragalactic source detection and limit generation, but such calculations
 require strong-field relativity, which is much more difficult to work with.
 
-\section{Appendix A}
+\section*{Appendix A}
 
 Step-By-Step Instructions for Data Analysis of Long-Track Data for High
 Frequency GW Detection
@@ -516,7 +524,7 @@ Frequency GW Detection
 What you'll need: -computer with linux installed (could potentially work on mac
 as well)
 
-\subsection{Installing tempo2}
+\subsection*{Installing tempo2}
 
 Tempo2 can be found at
 \url{https://bitbucket.org/psrsoft/tempo2}, or grabbed by using the command
@@ -578,7 +586,7 @@ tempo2 -v
 
 will verify that tempo2 is correctly installed.
 
-\subsection{Installing PAL2}
+\subsection*{Installing PAL2}
 
 Luckily, PAL2 is significantly easier to install than tempo2.
 First, clone the git repo with the command
@@ -635,7 +643,7 @@ If the installation was successful, the script should return a long list of
 options that are available.
 
 
-\subsection{Generating an hdf5 file}
+\subsection*{Generating an hdf5 file}
 
 In order to properly process the data from a .par and .tim file, it must first 
 be put into a format that PAL2 can handle. The hdf5 format (Hierarchical Data
@@ -657,7 +665,7 @@ If everything worked successfully, there should now be a file called
 \texttt{"name\_of\_output.hdf5"} in the current directory. This is the file to send to the
 upper limit script.
 
-\subsection{Generating Noise}
+\subsection*{Generating Noise}
 
 In order to correctly run simulations based on the data, a proper noise model
 must be established. This is done by exploring the noise model parameter space
@@ -679,7 +687,7 @@ noise data stored in multiple .txt files. The specific format of the noise
 subdirectory is not important, as the upper limit script knows how to deal with
 it.
 
-\subsection{Generating an Upper Limit}
+\subsection*{Generating an Upper Limit}
 
 Once the noise model is built correctly, the final step is to run the suite of
 simulations in the \texttt{generateUpperLimit.py} file for the data and noise model. This
@@ -706,7 +714,7 @@ file with the generated upper limit on CW strain in the frequency range
 specified in \texttt{generateUpperLimit.py}!
 
 \newpage
-\section{Bibliography}
+\section*{Bibliography}
 \noindent Arzoumanian, Z., Brazier, A., Burke-Spolaor, S., et al.\ 2014,
 Astrophysical Journal, 794, 141
 \\
@@ -720,6 +728,6 @@ Journal of Physics Conference Series, 716, 012014
 \\
 \newline\noindent Pennucci, T.~T.\ 2015, Ph.D.~Thesis
 \\
-\newline\noindent Abbott, B. et al.\ 2016 Phys. Rev. Lett., 116
+\newline\noindent Abbott, B. et al.\ 2016 Phys. Rev. Lett., 116, 061102
 
 \end{document}
