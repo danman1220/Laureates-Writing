@@ -11,6 +11,9 @@
 % User defined macros
 %%%%%%%%%%%%%%%
 
+\newcommand{\apj}{{Astrphysical Journal}}
+\newcommand{\mnras}{{Monthly Notices of the Royal Astronomical Society}}
+
 \newcommand{\etal}{{et al.~}}
 \newcommand{\lta}{\lesssim}
 \newcommand{\gta}{\gtrsim}
@@ -20,12 +23,6 @@
 %\newcommand{\refr}{\color{red}}
 \newcommand{\refb}{}
 %\newcommand{\refb}{\color{blue}}
-
-\def\be{\begin{equation*}}
-\def\ee{\end{equation*}}
-\def\ba{\begin{eqnarray*}}
-\def\ea{\end{eqnarray*}}
-
 
 
 %\newenvironment{inlinefigure}{
@@ -147,7 +144,7 @@ an atomic clock's precision. It is this stability that makes millisecond pulsars
 the primary data source for gravitational wave searches with pulsars.
 
 \begin{figure}
-    \caption{The $P-\dot{P}$ diagram (Lorimer 2008). Here rotational periods (x-axis) are
+    \caption{The $P-\dot{P}$ diagram \cite{Lorimer2008}. Here rotational periods (x-axis) are
 plotted against their spindown rates. Millisecond pulsars live in the bottom
 left quadrant of the plot, and spin down very slowly.}
 \includegraphics[width=\textwidth]{./figures/fig_P_Pdot_with_names.png}
@@ -166,7 +163,7 @@ remain fixed, but the practical (e.g. light travel time) distance is perturbed
 slightly.
 
 The Laser Interferometer Gravitational-Wave Observatory (LIGO) detectors recently announced the first detection of gravitational
-waves (Abbott 2016). The experiment detected a strain $\frac{\delta L}{L} \approx 10^{-21}$, corresponding to an absolute
+waves \cite{LIGO}. The experiment detected a strain $\frac{\delta L}{L} \approx 10^{-21}$, corresponding to an absolute
 distance change on the order of a fraction of a proton diameter. The LIGO
 observatory was able to detect such small changes in distance by using an
 optimized interferometer. By splitting a laser along two orthogonal paths,
@@ -227,7 +224,7 @@ the precision of the timing model (see Figure 2).
 
 \begin{figure}
 \caption{Having an incorrect parameter in the model produces easily detectable
-and correctable signatures in the residual data (from Lorimer 2008). The
+    and correctable signatures in the residual data \cite{Lorimer2008}. The
     residuals plotted here represent the magnitude of deviation from the
     expected time of arrival.}
 \includegraphics[width=\textwidth]{./figures/bad_timing.png}
@@ -291,14 +288,16 @@ wave signal, and any such CW signal would appear as white noise in the data.
 
 Recently, a 24-hour global observation was carried out on J1713+0747, a particular pulsar, which
 resulted in a new set of limits on continuous wave (CW) strain in the days to
-hours frequencies due to the average sampling rate of about 0.5 samples/min (Dolch et al.~2016).
+hours frequencies due to the average sampling rate of about 0.5 samples/min
+\cite{Dolch2016}.
 Limits were set for both CW sources in the direction of J1713, as well as
 random-direction CW sources.
 
   However, J1713 is not the only pulsar that has been observed for long,
 continuous observations. The pulsars J2302+4442 and J0613--0200 were each observed for
 multiple hours at a time at the GBT, originally for the purpose of measuring the Shapiro
-delay effect for each of the pulsars (Pennucci et al.~2015, Fonseca et al.~2016). Such data sets (see Figures 3 and 4) allow for analysis similar
+delay effect for each of the pulsars (\cite{Pennucci2015}, \cite{Fonseca2016}). 
+Such data sets (see Figures 3 and 4) allow for analysis similar
 to that done to the J1713 24-hour campaign. These pulsars allow for better
 directional limits to be placed in the microhertz to millihertz frequency range (Figure 5).
 
@@ -321,7 +320,7 @@ four separate sub-bands in the 820MHz band are plotted.}
    In 2013, eight pulsars were observed for extended periods of time with the GBT for the
 initial purpose of observing NANOGrav pulsars with significant Shapiro delays,
 targeted strategically in order to better observe the delays and therefore
-improve timing models (Pennucci et al. 2015, Fonseca et al. 2016). 
+improve timing models (\cite{Pennucci2015}, \cite{Fonseca2016}). 
 Of the eight data sets, two were chosen for our
 analysis. Both J2302+4442 and J0613--0200 had small rms residual values, and
 long continuous timing tracks.  Each pulsar was observed three times over the
@@ -370,8 +369,7 @@ describe a red noise variance.
 \end{figure}
 
     Our main tool for analyzing the sensitivity of a pulsar to continuous wave
-sources is the $F_p$ statistic (Arzoumanian~et.~al
-2014). The
+sources is the $F_p$ statistic (\cite{Arz2014}). The
 $F_p$ statistic is a frequentist detection statistic. It can be thought of as a
 measure of how much a particular frequency dominates the data. A high $F_p$
 statistic is indicative of a potential CW source at that frequency. For each
@@ -425,7 +423,7 @@ consortia.
 
 \subsection{Pulsar J0613-0200}
 
-Data from the Pennucci campaign and the Beklen campaign on PSR J0613-0200 had the
+Data from the Pennucci campaign (\cite{Pennucci2015}), and the Beklen campaign on PSR J0613-0200 had the
 smallest average error bars at around 1 microsecond. However, the pulsar is in a
 binary orbit with period of just over one day, which lies very close to the
 range of frequencies probed in this study. For this reason, the upper limit
@@ -715,20 +713,27 @@ file with the generated upper limit on CW strain in the frequency range
 specified in \texttt{generateUpperLimit.py}!
 
 \newpage
-\section*{Bibliography}
-\noindent Arzoumanian, Z., Brazier, A., Burke-Spolaor, S., et al.\ 2014,
-Astrophysical Journal, 794, 141
-\\
-\newline\noindent Dolch, T., NANOGrav Collaboration, Ellis, J.~A., et al.\ 2016,
-Journal of Physics Conference Series, 716, 012014
-\\
-\newline\noindent Fonseca, E., Pennucci, T.~T., Ellis, J.~A., et al.\ 2016, arXiv:1603.00545 
-%\newline\noindent
-\\
-\newline\noindent Lorimer, D.~R.\ 2008, Living Reviews in Relativity, 11
-\\
-\newline\noindent Pennucci, T.~T.\ 2015, Ph.D.~Thesis
-\\
-\newline\noindent Abbott, B. et al.\ 2016 Phys. Rev. Lett., 116, 061102
 
+\nocite{*}
+
+\bibliography{laureates_references}
+
+\bibliographystyle{abbrv}
+
+%\newpage
+%\section*{Bibliography}
+%Astrophysical Journal, 794, 141
+%\\
+%\newline\noindent Dolch, T., NANOGrav Collaboration, Ellis, J.~A., et al.\ 2016,
+%Journal of Physics Conference Series, 716, 012014
+%\\
+%\newline\noindent Fonseca, E., Pennucci, T.~T., Ellis, J.~A., et al.\ 2016, arXiv:1603.00545 
+%%\newline\noindent
+%\\
+%\newline\noindent Lorimer, D.~R.\ 2008, Living Reviews in Relativity, 11
+%\\
+%\newline\noindent Pennucci, T.~T.\ 2015, Ph.D.~Thesis
+%\\
+%\newline\noindent Abbott, B. et al.\ 2016 Phys. Rev. Lett., 116, 061102
+%
 \end{document}
