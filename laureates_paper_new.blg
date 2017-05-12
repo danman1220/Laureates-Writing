@@ -3,48 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: laureates_paper_new.aux
 The style file: abbrv.bst
 Database file #1: laureates_references.bib
-Warning--empty journal in Chernoff
-Warning--empty year in Chernoff
 Warning--empty school in Pennucci2015
 You've used 11 entries,
             2118 wiz_defined-function locations,
-            571 strings with 8536 characters,
-and the built_in function-call counts, 8230 in all, are:
-= -- 634
+            573 strings with 8545 characters,
+and the built_in function-call counts, 8235 in all, are:
+= -- 637
 > -- 945
 < -- 0
 + -- 378
 - -- 366
-* -- 888
-:= -- 1538
-add.period$ -- 32
+* -- 885
+:= -- 1541
+add.period$ -- 33
 call.type$ -- 11
 change.case$ -- 215
 chr.to.int$ -- 0
-cite$ -- 14
+cite$ -- 12
 duplicate$ -- 117
 empty$ -- 254
 format.name$ -- 366
-if$ -- 1459
+if$ -- 1462
 int.to.chr$ -- 0
 int.to.str$ -- 11
 missing$ -- 10
-newline$ -- 57
+newline$ -- 58
 num.names$ -- 22
-pop$ -- 202
+pop$ -- 198
 preamble$ -- 1
 purify$ -- 205
 quote$ -- 0
-skip$ -- 75
+skip$ -- 76
 stack$ -- 0
 substring$ -- 212
-swap$ -- 10
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 44
-warning$ -- 3
+warning$ -- 1
 while$ -- 30
 width$ -- 13
-write$ -- 118
-(There were 3 warnings)
+write$ -- 121
+(There was 1 warning)
